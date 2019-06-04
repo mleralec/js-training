@@ -13,5 +13,14 @@
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+const cutFirst = str => str.substring(2)
+const cutLast = str => str.substring(str.length - 2, 0)
+const cutFirstLast = str => cutFirst(cutLast(str))
+
+assert.strictEqual(typeof cutFirst, 'function')
+assert.strictEqual(typeof cutLast, 'function')
+assert.strictEqual(typeof cutFirstLast, 'function')
+assert.strictEqual(cutFirst('salut'), 'lut')
+assert.strictEqual(cutLast('salut'), 'sal')
+assert.strictEqual(cutFirstLast('salut'), 'l')
 // End of tests */

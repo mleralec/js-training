@@ -10,6 +10,7 @@
  */
 
 // Your code :
+const abs = n => n < 0 ? n * -1 : n
 
 //* Begin of tests
 const assert = require('assert')
