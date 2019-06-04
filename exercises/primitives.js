@@ -8,6 +8,10 @@
  */
 
 // Your code :
+const str = 'string'
+const num = 42
+const bool = false
+const undef = undefined
 
 
 //* Begin of tests

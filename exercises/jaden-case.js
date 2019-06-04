@@ -9,11 +9,12 @@
  * Example : "How are you ?" -> "How Are You ?"
  *
  */
-
-
+const jadenCase = str => str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, 'function')
+assert.strictEqual(jadenCase('How are you'), 'How Are You')
+assert.strictEqual(jadenCase('How are you ?'), 'How Are You ?')
 // End of tests */
