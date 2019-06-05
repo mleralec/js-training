@@ -8,7 +8,7 @@
  */
 
 // Your code :
-const str = 'string'
+const str = '1337'
 const num = 42
 const bool = false
 const undef = undefined
